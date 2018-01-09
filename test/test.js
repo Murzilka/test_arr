@@ -38,10 +38,18 @@ const tests = [
 ];
 
 describe('await arrToRange', function () {
-	for (let o of tests) {
-		it(o.descr, async function () {
-			const str = await arrToRange(o.arr);
-			assert.equal(str, o.str);
+	for (let test of tests) {
+		it(test.descr, async function () {
+			const str = await arrToRange(test.arr);
+			assert.equal(str, test.str);
 		});
 	}
+});
+
+describe('Promise arrToRange', function () {
+	Promise.all(tests.map(test => {
+		it(test.descr, function () {
+			arrToRange(test.arr).then(str => assert.equal(str, test.str));
+		});
+	}));
 });
