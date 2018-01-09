@@ -6,7 +6,7 @@ const arrToRange = require('../lib/index').arrToRange
 
 const tests = [
 	{
-		descr: 'ends with null'
+		descr: 'ends with null, wrong number in range 7-10'
 		, arr: [null, 'sdfsdf', 1, 3, 4, 5, 7, 8, 9, 3, 10, 12, 24, 25, 26, 28, null]
 		, str: '1,3-5,7-10,12,24-26,28'
 	}
@@ -21,7 +21,7 @@ const tests = [
 		, str: '24-27,29'
 	}
 	, {
-		descr: 'simple one number'
+		descr: 'one number'
 		, arr: [10000]
 		, str: '10000'
 	}
