@@ -1,0 +1,30 @@
+{
+  "name": "test_arr",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Murzilka/test_arr.git"
+  },
+  "keywords": [
+    "nodejs",
+    "test"
+  ],
+  "author": "a.popov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Murzilka/test_arr/issues"
+  },
+  "homepage": "https://github.com/Murzilka/test_arr#readme",
+  "engines": {
+    "node": ">= 7.10.1"
+  },
+  "devDependencies": {
+    "jasmine": "^2.8.0",
+    "mocha": "^4.1.0"
+  }
+}
